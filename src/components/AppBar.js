@@ -4,9 +4,9 @@ const AppBar = () => {
     console.log('AppBar rendering..')
     return (
         <div>
-            <div>Main page</div>
-            <div>About us</div>
-            <div>Contact us</div>
+            <p>Main page</p>
+            <p>About us</p>
+            <p>Contact us</p>
         </div>
     )
 }
