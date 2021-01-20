@@ -2,18 +2,37 @@ body {
     background-color: rgb(24, 23, 23);
 }
 
+.mainContainer {
+    min-height: calc(100vh - 100px);
+}
+
 p {
     color: white;
 }
 
 .appBarContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row
+
 }
 
 .appBarText {
     padding-top: 1%;
     padding-left: 1%;
-    flex-direction: row
+}
+
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerText {
+    padding-left: 25%;
 
 }
