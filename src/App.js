@@ -6,11 +6,7 @@ import About from '../src/components/About'
 import Contact from '../src/components/Contact'
 import Footer from '../src/components/Footer'
 import userService from './services/user'
-
-import {
-    BrowserRouter as Router,
-    Switch, Route
-} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
 
 const App = () => {
