@@ -6,6 +6,7 @@ import Header from './components/Header'
 import About from '../src/components/About'
 import Contact from '../src/components/Contact'
 import Footer from '../src/components/Footer'
+import Info from '../src/components/Info'
 //import userService from './services/user'
 import mediaService from './services/media'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -52,6 +53,9 @@ const App = () => {
                         </Route>
                         <Route exact path='/contact'>
                             <Contact />
+                        </Route>
+                        <Route exact path='/info'>
+                            <Info />
                         </Route>
                         <Route exact path='/authorize'>
                             <Authorize />

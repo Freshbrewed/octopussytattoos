@@ -18,12 +18,17 @@ const AppBar = () => {
             </div>
             <div style={style}>
                 <Logo width={12} height={70} />
-                <Link to='/about'>About us</Link>
+                <Link to='/about'>The Studio</Link>
                 <Logo width={12} height={70} />
             </div>
             <div style={style}>
                 <Logo width={12} height={70} />
                 <Link to='/contact'>Contact us</Link>
+                <Logo width={12} height={70} />
+            </div>
+            <div style={style}>
+                <Logo width={12} height={70} />
+                <Link to='/info'>Useful information</Link>
                 <Logo width={12} height={70} />
             </div>
             <div style={style}>
