@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from './Logo'
 import { Link } from 'react-router-dom'
 
 const AppBar = () => {
@@ -11,16 +12,24 @@ const AppBar = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'row' }}>
             <div style={style}>
+                <Logo width={12} height={70} />
                 <Link to='/'>Main page</Link>
+                <Logo width={12} height={70} />
             </div>
             <div style={style}>
+                <Logo width={12} height={70} />
                 <Link to='/about'>About us</Link>
+                <Logo width={12} height={70} />
             </div>
             <div style={style}>
+                <Logo width={12} height={70} />
                 <Link to='/contact'>Contact us</Link>
+                <Logo width={12} height={70} />
             </div>
             <div style={style}>
+                <Logo width={12} height={70} />
                 <Link to='/authorize'>Authorize</Link>
+                <Logo width={12} height={70} />
             </div>
         </div>
     )

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import AppBar from '../src/components/AppBar'
 import Authorize from '../src/components/Authorize'
 import ImageList from './components/ImageList'
+import Header from './components/Header'
 import About from '../src/components/About'
 import Contact from '../src/components/Contact'
 import Footer from '../src/components/Footer'
@@ -41,6 +42,7 @@ const App = () => {
 
     return (
         <div>
+            <Header />
             <div className='mainContainer'>
                 <Router>
                     <AppBar />
