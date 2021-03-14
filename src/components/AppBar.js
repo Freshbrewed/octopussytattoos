@@ -3,18 +3,23 @@ import { Link } from 'react-router-dom'
 
 const AppBar = () => {
 
+    const style = {
+        paddingTop: '1%',
+        paddingLeft: '1%'
+    }
+
     return (
-        <div className='appBarContainer'>
-            <div className='appBarText'>
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div style={style}>
                 <Link to='/'>Main page</Link>
             </div>
-            <div className='appBarText'>
+            <div style={style}>
                 <Link to='/about'>About us</Link>
             </div>
-            <div className='appBarText'>
+            <div style={style}>
                 <Link to='/contact'>Contact us</Link>
             </div>
-            <div className='appBarText'>
+            <div style={style}>
                 <Link to='/authorize'>Authorize</Link>
             </div>
         </div>

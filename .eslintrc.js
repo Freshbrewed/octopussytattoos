@@ -24,6 +24,7 @@ module.exports = {
         'react'
     ],
     'rules': {
+        'react/prop-types': 'off',
         'indent': [
             'error',
             4

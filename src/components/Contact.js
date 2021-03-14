@@ -2,8 +2,14 @@ import React from 'react'
 
 const ContactInfo = () => {
     //Proper linking to be added
+    const style = {
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '5%'
+    }
+
     return (
-        <div className='contactInfoContainer'>
+        <div style={style}>
             <p className='contactInfoText'>
                 Address: Helsinginkatu 34-32, 00510 Helsinki
             </p>

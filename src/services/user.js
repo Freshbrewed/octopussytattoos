@@ -1,31 +1,34 @@
 import axios from 'axios'
-import env from 'react-dotenv'
 
-const shortToken = null
-
-const getUserNode =  async () => {
-    const response = await axios.get(`https://graph.instagram.com/${env.USER_ID}?fields=id,username&access_token=${env.ACCESS_TOKEN}`)
+const getUserNode = async (userID, accessToken) => {
+    const response = await axios.get(`https://graph.instagram.com/${userID}?fields=id,username,account_type,media_count&access_token=${accessToken}`)
     return response.data
 }
 
-/* todo
+/* TODO Proper backend if needed
+const  shortToken = null
+const code = null
+
 const getShortToken = async () => {
-    https://api.instagram.com/oauth/authorize
-  ?client_id={instagram-app-id}
-  &redirect_uri={redirect-uri}
-  &scope={scope}
-  &response_type=code
-  &state={state}        //Optional
-}*/
+    const payload = {
+        client_id: CLIENT_ID,
+        client_secret: CLIENT_SECRET,
+        grant_type: 'authorization_code',
+        redirect_uri: REDIRECT_URI,
+        code: code
+    }
+    const response = await axios.post('https://api.instagram.com/oauth/authorize', payload)
+    return response.data
+}
 
 const getLongToken = async () => {
-    const response = await axios.get(`https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=${env.CLIENT_SECRET}&access_token=${shortToken}`)
+    const response = await axios.get(`https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=${CLIENT_SECRET}&access_token=${shortToken}`)
     return response.data
 }
 
 const refreshLongToken = async () => {
-    const response = await axios.get(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${env.ACCESS_TOKEN}`)
+    const response = await axios.get(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${ACCESS_TOKEN}`)
     return response.data
-}
+}*/
 
-export default { getUserNode, refreshLongToken, getLongToken }
+export default { getUserNode }
