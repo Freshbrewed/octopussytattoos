@@ -17,7 +17,7 @@ const ImageList = ({ media, loaded, fetch }) => {
                     />}
                 scrollableTarget="scrollableDiv"
             >
-                <div className="image-grid" style={{ marginTop: '30px' }}>
+                <div className="image-grid">
                     {loaded ?
                         media.map((image, index) => (
                             <div className='image' key={index}>

@@ -1,16 +1,9 @@
 import React from 'react'
 
 const About = () => {
-
-    const style = {
-        textAlign: 'center',
-        marginLeft: '20%',
-        marginRight: '20%',
-        padding: '5%'
-    }
     return (
-        <div style={style} >
-            <p style={{ fontSize: '40px' }}>Octopussy Tattoos is a unique tattoostudio located in the heart of  Helsinki.
+        <div className='about' >
+            <p>Octopussy Tattoos is a unique tattoostudio located in the heart of  Helsinki.
             Octopussy Tattoos was established in 2016 by Evandro Andrade d Silva after finishing studies in Lauttasaari
             and the current shop has been open since September 2020.
             The current Tattoo Artists are Zsofia Balogh from Transilvania and Sakoro Sakoro from Rio de Janeiro Brazil.

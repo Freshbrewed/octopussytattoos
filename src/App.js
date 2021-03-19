@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import AppBar from '../src/components/AppBar'
-import Authorize from '../src/components/Authorize'
 import ImageList from './components/ImageList'
 import Header from './components/Header'
 import About from '../src/components/About'
@@ -17,8 +16,8 @@ const App = () => {
     const [allMedia, setAllMedia] = useState(null)
     const [loaded, setIsLoaded] = useState(false)
 
-    const userID = '17841400630170565'
-    const accessToken = 'IGQVJWVHRrUlZAzRzVhWWkyeWRLeXZAiZAjVWMVhxQ25sLWRLVVQ2YmV1OVJlYUNWUU5CeWJDY0lndy1hS2JmU3ZAuUmlyVEVzUGppYmtZAZA1lFUTktY2VjZAWVSSmhuay1EVVhadmowTU5n'
+    const userID = '17841402105232117'
+    const accessToken = 'IGQVJVSTE3Q0pKU2U2ZAmk3aThib2FmOU1jYTQwRC1qWC1qT1hiX3VINGg4ejE4NFB5LXpXQ1gzaHJRd0psRm52T1ZA3Y2ttOW1oeEVTeGxyRFQyNkNvRGlWQzJYS0ZAJejB3Y0xMYlBn'
 
     /* useEffect(() => {
         userService
@@ -43,8 +42,8 @@ const App = () => {
 
     return (
         <div>
-            <Header />
             <div className='mainContainer'>
+                <Header />
                 <Router>
                     <AppBar />
                     <Switch>
@@ -57,11 +56,8 @@ const App = () => {
                         <Route exact path='/info'>
                             <Info />
                         </Route>
-                        <Route exact path='/authorize'>
-                            <Authorize />
-                        </Route>
                         <Route exact path='/'>
-                            <div style={{ marginTop: '50px' }}>
+                            <div className='imageList'>
                                 <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
                             </div>
                         </Route>
@@ -70,7 +66,6 @@ const App = () => {
             </div>
             <Footer />
         </div>
-
     )
 }
 
