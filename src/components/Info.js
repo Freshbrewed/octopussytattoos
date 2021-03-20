@@ -15,6 +15,7 @@ const Info = () => {
         'Tatuoinnin paranemiseen menee koosta ja sijainnista riippuen 2-4 viikkoa.',
         'Jos sinulle tulee kysyttävää tatuoinnista tai sen hoidosta, älä epäröi ottaa yhteyttä tatuoijaasi.'
     ]
+
     return (
         <div className='info'>
             {text.map((content, index) =>

@@ -66,6 +66,12 @@ li {
     display: flex;
     width: 100%;
 }
+
+.gmaps {
+    padding-top: 1rem;
+    width: 100%;
+    border: 0;
+}
   
 .image-grid {
     display: grid;

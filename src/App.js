@@ -6,26 +6,17 @@ import About from '../src/components/About'
 import Contact from '../src/components/Contact'
 import Footer from '../src/components/Footer'
 import Info from '../src/components/Info'
-//import userService from './services/user'
+import GoogleMaps from '../src/components/GoogleMaps'
 import mediaService from './services/media'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
 
 const App = () => {
-    // const [userNode, setUserNode] = useState(null)
     const [allMedia, setAllMedia] = useState(null)
     const [loaded, setIsLoaded] = useState(false)
 
     const userID = '17841402105232117'
     const accessToken = 'IGQVJVSTE3Q0pKU2U2ZAmk3aThib2FmOU1jYTQwRC1qWC1qT1hiX3VINGg4ejE4NFB5LXpXQ1gzaHJRd0psRm52T1ZA3Y2ttOW1oeEVTeGxyRFQyNkNvRGlWQzJYS0ZAJejB3Y0xMYlBn'
-
-    /* useEffect(() => {
-        userService
-            .getUserNode(userID, accessToken)
-            .then(userNode => {
-                setUserNode(userNode)
-            })
-    },[])*/
 
     useEffect(() => {
         getMediaContent()
@@ -57,9 +48,8 @@ const App = () => {
                             <Info />
                         </Route>
                         <Route exact path='/'>
-                            <div className='imageList'>
-                                <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
-                            </div>
+                            <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
+                            <GoogleMaps />
                         </Route>
                     </Switch>
                 </Router>

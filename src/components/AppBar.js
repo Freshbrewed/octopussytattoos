@@ -1,9 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
 const AppBar = () => {
-
     const style = {
         color: 'orange',
         textDecoration: 'inherit',
