@@ -1,18 +1,21 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
-const ContactInfo = () => {
+const ContactInfo = ({ setNotification }) => {
     return (
-        <div className='contactInfo'>
-            <p>Address: Helsinginkatu 34-32, 00510 Helsinki</p>
-            <p>Tel number</p>
-            <p> E-mail: octotattoos@gmail.com </p>
-            <p>Instagram: octopusytattoos</p>
-            <p>Maps link</p>
-            <p>Public transports?</p>
-            <div>
-                <p style={{ fontSize: '3rem' }}>TODO CONTACT FORM + CARD</p>
+
+        <div className='contactInfoContainer'>
+            <div className='contactInfoText'>
+                Book your time. Should you have any questions regarding
+                the tattoo, our studio or anything else, just shoot away.
+                We&apos;ll be happy answering your questions to
+                ensure you&apos;ll have a rock smooth and
+                unforgettable experience with us!
             </div>
+            <ContactForm setNotification={setNotification} />
         </div>
+
+
     )
 }
 

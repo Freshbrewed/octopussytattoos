@@ -6,7 +6,6 @@ const Logomize = ({ width, height, text }) => {
         width: `${width}%`,
         height: `${height}%`
     }
-
     return (
         <div className='infoItem'>
             <img src={logo} style={style} />
