@@ -4,8 +4,8 @@ const Footer = () => {
 
     return (
         <div className='footer' >
-            <p style={{ color: 'orange', fontSize: '1.5rem' }}>Helsinginkatu 34-32, 00510 Helsinki</p>
-            <p style={{ color: 'orange', fontSize: '1.5rem' }}>Puh. 040 354 2314</p>
+            <div>Helsinginkatu 34-32, 00510 Helsinki </div>
+            <div> Puh. 040 354 2314</div>
         </div>
     )
 }

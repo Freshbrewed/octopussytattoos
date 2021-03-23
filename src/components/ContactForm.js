@@ -15,7 +15,7 @@ const ContactForm = ({ setNotification }) => {
         setMessage('')
         setNotification('Thank you, we got your message!')
         setTimeout(() => {
-            setNotification('')
+            setNotification(null)
         }, 3000)
     }
     return (

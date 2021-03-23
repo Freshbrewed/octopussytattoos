@@ -1,3 +1,9 @@
+:root {
+    --primaryColor: rgba(215,123,90,255);
+    --secondaryColor: white;
+    --fontSizeContent: 1.5rem;
+}
+
 body {
     background-color:black;
     height: 100%;
@@ -10,39 +16,46 @@ body {
 }
 
 div {
-    color: white;
+    color: var(--secondaryColor);
 }
 
 p {
-    color: white;
+    color: var(--secondaryColor);
 }
 
 li {
-    color: white;
-    font-size: 1.5rem;
+    color: var(--secondaryColor);
+    font-size: var(--fontSizeContent);
 }
 
 .appBar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.link {
+    color: rgba(215,123,90,255);
+    text-decoration: none;
+    font-size: var(--fontSizeContent);
 }
 
 .about {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: var(--fontSizeContent);
 }
 
-.contactInfoContainer {
+.contactContainer {
     padding-top: 1rem;
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: var(--fontSizeContent);
     justify-content: space-evenly;
 }
 
-.contactInfoText {
+.contactText {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -64,13 +77,20 @@ li {
     padding: 0.5rem;
     display: flex;
     flex-direction: row;
-    font-size: 1.5rem;
+    font-size: var(--fontSizeContent);
 }
 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 3.5rem;
+}
+
+.footer div {
+    align-self: flex-end;
+    color: var(--primaryColor);
+    font-size: var(--fontSizeContent);
 }
 
 .header {
@@ -110,11 +130,14 @@ li {
 
 .success {
     display: flex;
+    align-self: center;
     width:fit-content;
-    color: orange;
+    color:var(--primaryColor);
     background: black;
-    font-size: 1.5rem;
-    border-style: solid;
+    font-size: var(--fontSizeContent);
+    border-style: outset;
+    border-color: var(--primaryColor);
+    border-width: 0.3rem;
     border-radius: 0.5rem;
     padding: 1rem;
   }
@@ -124,7 +147,7 @@ li {
     width: 15%;
     color: red;
     background: black;
-    font-size: 1.5rem;
+    font-size: var(--fontSizeContent);
     border-style: solid;
     border-radius: 0.5rem;
     padding: 1rem;
