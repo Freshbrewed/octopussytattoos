@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Footer = () => {
-
     return (
         <div className='footer' >
             <div>Helsinginkatu 34-32, 00510 Helsinki </div>

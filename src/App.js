@@ -6,7 +6,6 @@ import About from '../src/components/About'
 import Contact from '../src/components/Contact'
 import Footer from '../src/components/Footer'
 import Info from './components/Info'
-import GoogleMaps from '../src/components/GoogleMaps'
 import mediaService from './services/media'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
@@ -49,7 +48,7 @@ const App = () => {
                         </Route>
                         <Route exact path='/'>
                             <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
-                            <GoogleMaps />
+                            <Contact  />
                         </Route>
                     </Switch>
                 </Router>

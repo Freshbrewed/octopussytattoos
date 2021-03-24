@@ -1,6 +1,7 @@
 :root {
     --primaryColor: rgba(215,123,90,255);
     --secondaryColor: white;
+    --fontSizeTitle: 3rem;
     --fontSizeContent: 1.2rem;
     --fontSizeLabel: 1.2rem;
     --fontSizeDescription: 0.8rem;
@@ -16,6 +17,8 @@ body {
 
 div {
     color: var(--secondaryColor);
+    letter-spacing: 0.058rem;
+    word-spacing: 0.08rem;
 }
 
 p {
@@ -50,17 +53,14 @@ li {
     font-size: var(--fontSizeContent);
 }
 
+.header {
+    display: flex;
+    width: 100%;
+}
+
 .about {
     text-align: center;
     font-size: var(--fontSizeContent);
-}
-
-.contactContainer {
-    padding-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    font-size: var(--fontSizeContent);
-    justify-content: space-evenly;
 }
 
 .info {
@@ -90,14 +90,8 @@ li {
     font-size: var(--fontSizeContent);
 }
 
-.header {
-    display: flex;
-    width: 100%;
-}
-
 .gmaps {
-    padding-top: 1rem;
-    width: 100%;
+    width: 25%;
     border: 0;
 }
   
@@ -150,13 +144,34 @@ li {
     padding: 1rem;
   }
 
-  .contactText {
+.contactContainer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactContent {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontSizeContent);
+    justify-content: space-evenly;
+}
+
+.contactTitle {
+    text-align: center;
+    font-size: var(--fontSizeTitle);
+    padding-bottom: 3rem;
+}
+
+.contactText {
+    padding-top: 4rem;
     display: flex;
     flex-direction: column;
     width: 25%;
 }
 
-  .contactForm{
+.contactForm{
     display: flex;
     flex-direction: column;
 	background: transparent;
