@@ -3,17 +3,13 @@ import Logomize from './Logomize'
 
 const Info = () => {
     const text = [
-        'Pidä haavateippiä 1-4 päivää. Jos haavateipin alle ilmestyy verta tai kudosnestettä runsaasti, ota haavateippi pois. Jos tatuoinnin päälle laitetaan kelmu, sitä voi pitää pari tuntia.',
-        'Poista haavateippi hitaasti lämpimän veden alla.',
-        'Käsittele tatuointia aina puhtain käsin.',
-        'Haavateipin poiston jälkeen pese tatuointi vedellä tai miedolla, hajustamattomalla, saippualla.',
-        'Rasvaa tatuointia useita kertoja päivässä ohuehkolla kerroksella niin, että tatuointi saa hengitettyä (Bepanthen tai Easytattoo).',
-        'Älä pidä hankaavia vaatteita, koruja tms. tatuoinnin päällä paranemisvaiheen aikana, ne saattavat kuluttaa väriä pois.',
-        'Vältä runsasta hikoilua, uimista ja saunomista ensimmäiset kaksi viikkoa. Suojaa tatuointisi auringolta.',
-        'Käytä myös jatkossa rasvaa.',
-        'Älä nypi tai raavi tatuointia, pieni taputtelu lievittää kutinaa.',
-        'Tatuoinnin paranemiseen menee koosta ja sijainnista riippuen 2-4 viikkoa.',
-        'Jos sinulle tulee kysyttävää tatuoinnista tai sen hoidosta, älä epäröi ottaa yhteyttä tatuoijaasi.'
+        'Poista kelmu 3-12 tunnin kuluttua.',
+        'Pese käsitelty alue vedellä, voit käyttää mietoa hajustamatonta saippuaa. Kuivaa painelemalla, älä hankaa.',
+        'Rasvaa tatuointia useita kertoja vuorokaudessa ohuesti Punaisella Bepanthen tai muulla antiseptisella voiteella.',
+        'Käytää sidettä (tai peittävää kelmua) ainoastaan likaisessa olosuhteissa,tai kun tatuointi on hankaavalla paikalla. Tatuointi paranee parhaiten ilmavissa olosuhteissa peittämättömänä.',
+        'Huolehdi, että tatuointikohta pysyy puhtaana. Käytä ilmavia vaatteita - vältä ihoa ärsyttäviä materiaaleja (sukkahousut, villa yms).',
+        'Älä liota tai sauno 2 viikkoon. Suojaa tatuoitu ihon kohta auringolta ja solariumilta vähintään kuukauden ajan.',
+        'Älä raavi tai revi rupea.'
     ]
 
     return (
@@ -21,7 +17,6 @@ const Info = () => {
             {text.map((content, index) =>
                 <Logomize width={1.2} height={1.5} text={content} key={index} />
             )}
-            <p style={{ fontSize: '40px' }}>TODO English</p>
         </div>
     )
 }

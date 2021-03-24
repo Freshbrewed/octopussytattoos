@@ -34,9 +34,9 @@ const App = () => {
     return (
         <div>
             <div className='mainContainer'>
-                <Header />
                 <Router>
                     <AppBar />
+                    <Header />
                     <Switch>
                         <Route exact path='/about'>
                             <About />

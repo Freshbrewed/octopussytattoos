@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom'
 
 const AppBar = () => {
     return (
-        <div className='appBar'>
-            <Link className='link' to={'/'}> Main page </Link>
-            <Link className='link' to={'/about'}> The Studio </Link>
-            <Link className='link' to={'/contact'}> Contact us </Link>
-            <Link className='link' to={'/info'}> Useful information </Link>
+        <div className='appBarContainer'>
+            <div className='appBarContent'>
+                <Link className='link' to={'/'}> Home </Link>
+                <Link className='link' to={'/about'}> The Studio </Link>
+                <Link className='link' to={'/contact'}> Contact us </Link>
+                <Link className='link' to={'/info'}> Useful information </Link>
+            </div>
         </div>
     )
 }

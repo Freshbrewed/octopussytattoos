@@ -1,18 +1,17 @@
 :root {
     --primaryColor: rgba(215,123,90,255);
     --secondaryColor: white;
-    --fontSizeContent: 1.5rem;
+    --fontSizeContent: 1.2rem;
+    --fontSizeLabel: 1.2rem;
+    --fontSizeDescription: 0.8rem;
 }
 
 body {
     background-color:black;
+    margin: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.mainContainer {
-    min-height: calc(100vh - 100px);
 }
 
 div {
@@ -28,12 +27,21 @@ li {
     font-size: var(--fontSizeContent);
 }
 
-.appBar {
+.appBarContainer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+}
+
+.appBarContent {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-evenly;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
 }
 
 .link {
@@ -53,17 +61,6 @@ li {
     flex-direction: row;
     font-size: var(--fontSizeContent);
     justify-content: space-evenly;
-}
-
-.contactText {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-}
-
-.contactForm {
-    display:flex;
-    flex-direction: column;
 }
 
 .info {
@@ -152,4 +149,108 @@ li {
     border-radius: 0.5rem;
     padding: 1rem;
   }
+
+  .contactText {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+  .contactForm{
+    display: flex;
+    flex-direction: column;
+	background: transparent;
+	border-radius:2px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.contactForm ul {
+	list-style:none;
+	padding:0;
+	margin:0;	
+}
+
+.contactForm li{
+	display: block;
+	padding: 9px;
+	border:1px solid var(--primaryColor);
+	margin-bottom: 30px;
+	border-radius: 3px;
+}
+
+.contactForm li:last-child{
+	border:none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.contactForm li > label{
+	display: block;
+	float: left;
+	margin-top: -19px;
+	background: black;
+	height: 22px;
+	padding: 0;
+	color: #B9B9B9;
+	font-size: var(--fontSizeLabel);
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.contactForm li > span{
+	background: black;
+	display: block;
+	padding: 3px;
+	margin: 0 -9px -9px -9px;
+	text-align: center;
+	color: #C0C0C0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: var(--fontSizeDescription);
+}
+
+.contactForm input, textarea {
+    background-color: black;
+    color: white;
+    border: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif; 
+}
+
+.contactForm input:hover, textarea:hover {
+    background-color: var(--primaryColor);
+}
+
+.contactForm input:focus, textarea:focus {
+    background-color: black;
+}
+
+.contactForm textarea {
+	resize:none;
+}
+
+.contactForm input[type='submit'] {
+    background: black;
+	border: none;
+	border-bottom: 1px solid var(--primaryColor);
+	border-radius: 1px;
+	color: #D2E2FF;
+}
+
+.contactForm input[type='submit']:hover {
+	background: var(--primaryColor);
+	color:black;
+}
+  
+
+
   
