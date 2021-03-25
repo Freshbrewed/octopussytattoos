@@ -7,7 +7,7 @@ const Contact = () => {
     const [notification, setNotification] = useState(null)
 
     if (notification) return (
-        <div className='contactContainer'>
+        <div className='contactContainer' id='contact'>
             <h3 style={{ textAlign: 'center' }}>Contact us!</h3>
             <div className='contactContent'>
                 <div className='contactText'>
@@ -24,10 +24,10 @@ const Contact = () => {
                 <Gmaps />
             </div>
         </div>
-
     )
+
     return (
-        <div className='contactContainer'>
+        <div className='contactContainer' id='contact'>
             <div className='contactTitle'> Contact us! </div>
             <div className='contactContent'>
                 <div className='contactText'>
@@ -44,7 +44,6 @@ const Contact = () => {
                 <Gmaps />
             </div>
         </div>
-
     )
 }
 

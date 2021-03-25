@@ -31,28 +31,24 @@ const App = () => {
     }
 
     return (
-        <div>
-            <div className='mainContainer'>
-                <Router>
-                    <AppBar />
-                    <Header />
-                    <Switch>
-                        <Route exact path='/about'>
-                            <About />
-                        </Route>
-                        <Route exact path='/contact'>
-                            <Contact  />
-                        </Route>
-                        <Route exact path='/info'>
-                            <Info />
-                        </Route>
-                        <Route exact path='/'>
-                            <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
-                            <Contact  />
-                        </Route>
-                    </Switch>
-                </Router>
-            </div>
+
+        <div className='mainContainer'>
+            <Router>
+                <AppBar />
+                <Header />
+                <Switch>
+                    <Route exact path='/'>
+                        <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
+                        <Contact />
+                    </Route>
+                    <Route exact path='/about'>
+                        <About />
+                    </Route>
+                    <Route exact path='/info'>
+                        <Info />
+                    </Route>
+                </Switch>
+            </Router>
             <Footer />
         </div>
     )

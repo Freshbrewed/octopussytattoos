@@ -5,9 +5,9 @@ const AppBar = () => {
     return (
         <div className='appBarContainer'>
             <div className='appBarContent'>
-                <Link className='link' to={'/'}> Home </Link>
+                <a href='/#home' className='link'> Home </a>
                 <Link className='link' to={'/about'}> The Studio </Link>
-                <Link className='link' to={'/contact'}> Contact us </Link>
+                <a href='/#contact' className='link'> Contact us </a>
                 <Link className='link' to={'/info'}> Useful information </Link>
             </div>
         </div>
