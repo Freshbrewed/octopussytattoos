@@ -5,6 +5,8 @@
     --fontSizeContent: 1.2rem;
     --fontSizeLabel: 1.2rem;
     --fontSizeDescription: 0.8rem;
+
+    --fontSizeMobile: 0.8rem;
 }
 
 body {
@@ -146,9 +148,14 @@ li {
 
 .contactContainer {
     padding-top: 5rem;
-    padding-bottom: 5rem;
     display: flex;
     flex-direction: column;
+}
+
+.contactTitle {
+    text-align: center;
+    font-size: var(--fontSizeTitle);
+    padding-bottom: 3rem;
 }
 
 .contactContent {
@@ -158,12 +165,6 @@ li {
     justify-content: space-evenly;
 }
 
-.contactTitle {
-    text-align: center;
-    font-size: var(--fontSizeTitle);
-    padding-bottom: 3rem;
-}
-
 .contactText {
     padding-top: 4rem;
     display: flex;
@@ -171,7 +172,7 @@ li {
     width: 25%;
 }
 
-.contactForm{
+.contactForm {
     display: flex;
     flex-direction: column;
 	background: transparent;
@@ -264,6 +265,45 @@ li {
 .contactForm input[type='submit']:hover {
 	background: var(--primaryColor);
 	color:black;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones */
+    .link {
+        font-size: var(--fontSizeMobile);
+    }
+
+    .contactContainer {
+        padding-top: 2.5rem;
+    }
+
+    .contactTitle {
+        font-size: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .contactContent {
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .contactText {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+    }
+
+    .gmaps {
+        padding-top: 2.5rem;
+        width: 100%;
+    }
+
+    .footer div {
+        font-size: var(--fontSizeMobile);
+        padding-bottom: 0.1rem;
+    }
+
 }
   
 
