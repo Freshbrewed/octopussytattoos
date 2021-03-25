@@ -13,7 +13,6 @@ const About = () => {
             decoration creates an intimate atmosphere and allows clients to relax in total privacy.
             Octopussy Studio is a fully certified sterile and hygienic environment. Our Studio is open by appointments.
             Agelimit for tattoos are 18 years and up.
-
         </div >
     )
 }

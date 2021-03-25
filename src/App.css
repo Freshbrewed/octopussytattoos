@@ -56,27 +56,36 @@ li {
 }
 
 .header {
+    padding-top: 50px;
     display: flex;
     width: 100%;
+    padding-bottom: 2rem;
 }
 
 .about {
-    text-align: center;
+    display: flex;
+    width: 50%;
+    padding-left: 25%;
     font-size: var(--fontSizeContent);
 }
 
 .info {
-    padding-top: 1rem;
-    padding-left: 1rem;
     display: flex;
     flex-direction: column;
+    padding-left: 25%;
+    padding-right: 16%;
 }
 
 .infoItem {
-    padding: 0.5rem;
     display: flex;
     flex-direction: row;
     font-size: var(--fontSizeContent);
+    padding: 1rem;
+}
+
+.logo {
+    width: 3rem;
+    height: 2rem;
 }
 
 .footer {
@@ -84,6 +93,7 @@ li {
     flex-direction: row;
     justify-content: space-evenly;
     height: 3.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .footer div {
@@ -166,7 +176,7 @@ li {
 }
 
 .contactText {
-    padding-top: 4rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -301,9 +311,20 @@ li {
 
     .footer div {
         font-size: var(--fontSizeMobile);
-        padding-bottom: 0.1rem;
+    }
+    
+    .info {
+        padding-left: 0;
+        padding-right: 0;
     }
 
+    .about {
+        width: 80%;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 1.5rem;
+
+    }
 }
   
 

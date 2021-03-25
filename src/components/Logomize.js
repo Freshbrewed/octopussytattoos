@@ -1,16 +1,12 @@
 import React from 'react'
 import logo from '../assets/logoTrimmed.png'
 
-const Logomize = ({ width, height, text }) => {
-    const style = {
-        width: `${width}%`,
-        height: `${height}%`
-    }
+const Logomize = ({ text }) => {
     return (
         <div className='infoItem'>
-            <img src={logo} style={style} />
+            <img src={logo} className='logo' />
             &nbsp;
-            <div>{text}</div>
+            <div style={{ paddingTop: '0.3rem' }}>{text}</div>
         </div>
     )
 }

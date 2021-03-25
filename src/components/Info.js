@@ -15,7 +15,7 @@ const Info = () => {
     return (
         <div className='info'>
             {text.map((content, index) =>
-                <Logomize width={1.2} height={1.5} text={content} key={index} />
+                <Logomize text={content} key={index} />
             )}
         </div>
     )
