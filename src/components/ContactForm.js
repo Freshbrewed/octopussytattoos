@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import mailService from '../services/mail'
 
 const ContactForm = ({ setNotification }) => {
     const [ name, setName ] = useState('')
@@ -9,7 +10,7 @@ const ContactForm = ({ setNotification }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(name, email, telNumber, date, message)
+        mailService.sendMail(name, email, telNumber, date, message)
         setName('')
         setEmail('')
         setTelNumber('')
