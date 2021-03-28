@@ -83,6 +83,17 @@ li {
     padding: 1rem;
 }
 
+#languageButton {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-size: 2rem;
+    background-color: black;
+    color: var(--primaryColor);
+    border-color: var(--primaryColor);
+    width: 7%;
+}
+
 .logo {
     width: 3rem;
     height: 2rem;
@@ -318,6 +329,10 @@ li {
     .info {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    #languageButton {
+        width: 21%;
     }
 
     .about {

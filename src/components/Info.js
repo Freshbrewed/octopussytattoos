@@ -1,20 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
+import text from '../data'
 import Logomize from './Logomize'
 
 const Info = () => {
-    const text = [
-        'Poista kelmu 3-12 tunnin kuluttua.',
-        'Pese käsitelty alue vedellä, voit käyttää mietoa hajustamatonta saippuaa. Kuivaa painelemalla, älä hankaa.',
-        'Rasvaa tatuointia useita kertoja vuorokaudessa ohuesti Punaisella Bepanthen tai muulla antiseptisella voiteella.',
-        'Käytä sidettä (tai peittävää kelmua) ainoastaan likaisessa olosuhteissa,tai kun tatuointi on hankaavalla paikalla. Tatuointi paranee parhaiten ilmavissa olosuhteissa peittämättömänä.',
-        'Huolehdi, että tatuointikohta pysyy puhtaana. Käytä ilmavia vaatteita - vältä ihoa ärsyttäviä materiaaleja (sukkahousut, villa yms).',
-        'Älä liota tai sauno 2 viikkoon. Suojaa tatuoitu ihon kohta auringolta ja solariumilta vähintään kuukauden ajan.',
-        'Älä raavi tai revi rupea.'
-    ]
+    const [language, setLanguage] = useState('FIN')
+    const [display, setDisplay] = useState(text.infoEng)
+
+    const handleClick = () => {
+        language === 'ENG' ? (
+            setLanguage('FIN'), setDisplay(text.infoEng)
+        ) :
+            (
+                setLanguage('ENG'), setDisplay(text.infoFin)
+            )
+    }
 
     return (
         <div className='info'>
-            {text.map((content, index) =>
+            <button onClick={handleClick} id='languageButton'>{language}</button>
+            {display.map((content, index) =>
                 <Logomize text={content} key={index} />
             )}
         </div>
