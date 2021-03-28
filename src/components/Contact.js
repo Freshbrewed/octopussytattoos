@@ -25,7 +25,6 @@ const Contact = () => {
             </div>
         </div>
     )
-
     return (
         <div className='contactContainer' id='contact'>
             <div className='contactTitle'> Contact us! </div>
@@ -45,6 +44,7 @@ const Contact = () => {
             </div>
         </div>
     )
+
 }
 
 export default Contact

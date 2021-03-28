@@ -10,6 +10,7 @@ import mediaService from './services/media'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
 
+
 const App = () => {
     const [allMedia, setAllMedia] = useState(null)
     const [loaded, setIsLoaded] = useState(false)
@@ -43,7 +44,7 @@ const App = () => {
                         <Info />
                     </Route>
                     <Route exact path='/'>
-                        <ImageList media={allMedia} loaded={loaded} fetch={getMediaContent} />
+                        <ImageList media={allMedia} loaded={loaded} />
                         <Contact />
                     </Route>
                 </Switch>

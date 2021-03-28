@@ -1,31 +1,18 @@
 import React from 'react'
-import Image from './Image'
-import loader from '../assets/loader311px.gif'
-import InfiniteScroll from 'react-infinite-scroll-component'
+import ImageContainer from './ImageContainer'
 
-
-const ImageList = ({ media, loaded, fetch }) => {
-    if (media === null) return <div>Loading...</div>
+const ImageList = ({ media, loaded }) => {
+    if (media === null) return <div>Loading . . .</div>
     return (
-        <div id="scrollableDiv" style={{ height: 800, overflow: 'auto' }}>
-            <InfiniteScroll
-                dataLength={media.length}
-                next={() => fetch()}
-                hasMore={false}
-                loader={
-                    <img src={loader} alt="Loading"
-                    />}
-                scrollableTarget="scrollableDiv"
-            >
-                <div className="image-grid">
-                    {loaded ?
-                        media.map((image, index) => (
-                            <div className='image' key={index}>
-                                <Image data={image} />
-                            </div>
-                        )) : ''}
-                </div>
-            </InfiniteScroll>
+        <div className='image-grid'>
+            {loaded ?
+                media.map(image => {
+                    return (
+                        <div key={image.id} className='image'>
+                            <ImageContainer data={image} />
+                        </div>
+                    )
+                }) : <div>Loading . . .</div>}
         </div>
     )
 }

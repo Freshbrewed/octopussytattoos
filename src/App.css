@@ -114,9 +114,7 @@ li {
     grid-auto-rows: minmax(50px, auto);
   }
 
-.image:nth-child(5n){
-    grid-column-end: span 2;
-  }
+
 
 .image {
     display: flex;
@@ -125,6 +123,10 @@ li {
     object-fit: cover;
     transition: 0.4s transform;
 }
+
+.image:nth-child(5n){
+    grid-column-end: span 2;
+  }
 
 .image:hover {
     transform: scale(1.01);
