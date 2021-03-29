@@ -8,10 +8,11 @@
 
     --fontSizeMobile: 0.8rem;
 }
-
+/* For desktop*/
 body {
     background-color:black;
     margin: 0;
+    padding: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -30,6 +31,14 @@ p {
 li {
     color: var(--secondaryColor);
     font-size: var(--fontSizeContent);
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.burger {
+    display: none;
 }
 
 .appBarContainer {
@@ -292,6 +301,11 @@ li {
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones */
+
+    .appBarContainer {
+        display: none;
+    }
+
     .link {
         font-size: var(--fontSizeMobile);
     }
@@ -341,6 +355,64 @@ li {
         padding-right: 2rem;
         padding-top: 1.5rem;
     }
+
+    .burger {
+        position: fixed;
+        top: 2%;
+        left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 15;
+    }
+
+    .burger:focus {
+        outline: none;
+    }
+
+    .burger div {
+        width: 2rem;
+        height: 0.25rem;
+        background: var(--primaryColor);
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+    }
+
+    .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: rgba(0,0,0,0.7);
+        text-align: left;
+        padding: 2rem;
+        position: fixed;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); 
+        width: 30%
+    }
+
+    .burgerMenu a, link {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1.5rem 0;
+        font-weight: bold;
+        color: var(--primaryColor);
+        text-decoration: none;
+        transition: color 0.3s linear;      
+  }
+
+  a:hover {
+      color: green;
+  }
+
 }
   
 
