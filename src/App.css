@@ -366,7 +366,7 @@ li {
         width: 2rem;
         height: 2rem;
         background: transparent;
-        border: none;
+        border: 0;
         cursor: pointer;
         padding: 0;
         z-index: 15;
@@ -390,7 +390,7 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,0.8);
         text-align: left;
         padding: 2rem;
         position: fixed;
@@ -403,14 +403,12 @@ li {
         font-size: 1.2rem;
         text-align: center;
         padding: 1.5rem 0;
-        font-weight: bold;
         color: var(--primaryColor);
-        text-decoration: none;
         transition: color 0.3s linear;      
   }
 
-  a:hover {
-      color: green;
+  a:hover, link:hover {
+    font-weight: bold;
   }
 
 }
