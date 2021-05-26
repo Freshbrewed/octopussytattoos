@@ -21,7 +21,7 @@ body {
 @font-face {
     font-family: "Lato";
     src: local("Lato"),
-     url('./fonts/Lato/Lato-Italic.ttf') format("truetype");
+     url('./fonts/Lato/Lato-Regular.ttf') format("truetype");
     font-weight: normal;
    }
 

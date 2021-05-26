@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className='about' >
             Octopussy Tattoos is a unique tattoostudio located in the heart of  Helsinki.
-            Octopussy Tattoos was established in 2016 by Evandro Andrade d Silva after finishing studies in Lauttasaari
+            Octopussy Tattoos was established in 2016 in Lauttasaari
             and the current shop has been open since September 2020.
             The current Tattoo Artists are Zsofia Balogh from Transilvania and Sakoro Sakoro from Rio de Janeiro Brazil.
             <br />
