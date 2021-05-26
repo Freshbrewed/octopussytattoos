@@ -18,10 +18,19 @@ body {
     flex-direction: column;
 }
 
+@font-face {
+    font-family: "Lato";
+    src: local("Lato"),
+     url('./fonts/Lato/Lato-Italic.ttf') format("truetype");
+    font-weight: normal;
+   }
+
+
 div {
     color: var(--secondaryColor);
     letter-spacing: 0.058rem;
     word-spacing: 0.08rem;
+    font-family: 'Lato';
 }
 
 p {
@@ -156,7 +165,6 @@ li {
 
 .image:hover {
     transform: scale(1.01);
-    filter: contrast(1.2) saturate(1.1);
 }
 
 .success {
