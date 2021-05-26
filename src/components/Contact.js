@@ -21,7 +21,7 @@ const Contact = () => {
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
                     <br /><br />
-                    <SocialMedia />
+                    <SocialMedia width={64} height={64}/>
                 </div>
                 <Notification notification={notification} />
                 <GoogleMaps />
@@ -43,7 +43,7 @@ const Contact = () => {
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
                     <br /><br />
-                    <SocialMedia />
+                    <SocialMedia width={64} height={64}/>
                 </div>
                 <ContactForm setNotification={setNotification} />
                 <GoogleMaps />
