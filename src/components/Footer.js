@@ -1,9 +1,10 @@
 import React from 'react'
 
 const Footer = () => {
+    const date = new Date()
     return (
         <div className='footer' >
-            <div>© Octopussy Tattoos 2021</div>
+            <div>© Octopussy Tattoos {date.getFullYear()}</div>
         </div>
     )
 }

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import ContactForm from './ContactForm'
 import Notification from './Notification'
-import Gmaps from './GoogleMaps'
+import GoogleMaps from './GoogleMaps'
+import SocialMedia from './SocialMedia'
 
 const Contact = () => {
     const [notification, setNotification] = useState(null)
@@ -19,12 +20,15 @@ const Contact = () => {
                     <br /><br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
+                    <br /><br />
+                    <SocialMedia />
                 </div>
                 <Notification notification={notification} />
-                <Gmaps />
+                <GoogleMaps />
             </div>
         </div>
     )
+
     return (
         <div className='contactContainer' id='contact'>
             <div className='contactTitle'> Contact us! </div>
@@ -38,13 +42,14 @@ const Contact = () => {
                     <br /><br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
+                    <br /><br />
+                    <SocialMedia />
                 </div>
                 <ContactForm setNotification={setNotification} />
-                <Gmaps />
+                <GoogleMaps />
             </div>
         </div>
     )
-
 }
 
 export default Contact

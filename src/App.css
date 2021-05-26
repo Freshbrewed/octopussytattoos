@@ -92,6 +92,11 @@ li {
     padding: 1rem;
 }
 
+.socialMedia {
+    width: 64px;
+    height: 64px;
+}
+
 #languageButton {
     display: flex;
     justify-content: center;
@@ -123,6 +128,7 @@ li {
 }
 
 .gmaps {
+    display: flex;
     width: 25%;
     border: 0;
 }
@@ -202,6 +208,11 @@ li {
     display: flex;
     flex-direction: column;
     width: 25%;
+}
+
+.contactSocialMedia {
+    display: flex;
+    flex-direction: row;
 }
 
 .contactForm {
