@@ -7,7 +7,7 @@ const SocialMedia = ({ width, height }) => {
         <div>
             <a style={{ display: 'table-cell' }} href='https://www.facebook.com/octopusytattoos' target="_blank"
                 rel="noopener noreferrer">
-                <img src={fb} style={{ width: width, height: height, paddingRight: '1rem' }} />
+                <img src={fb} style={{ width: width, height: height, paddingRight: '1.2rem' }} />
             </a>
 
             <a style={{ display: 'table-cell' }} href="https://www.instagram.com/octopusytattoos/" target="_blank"

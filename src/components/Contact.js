@@ -42,7 +42,8 @@ const Contact = () => {
                     <br /><br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
-                    <br /><br />
+                    <br/><br />
+                    <div style={{ paddingBottom: '2rem' }} />
                     <SocialMedia width={64} height={64}/>
                 </div>
                 <ContactForm setNotification={setNotification} />
