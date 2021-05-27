@@ -73,14 +73,12 @@ li {
         transform: scale(1);
         opacity: 0;
         display: none;
-
     }
 }
 
 .entryLogo {
     width: 60%;
-    height: 95vh;
-
+    height: 100vh;
 }
 
 .burgerMenu {
@@ -430,6 +428,7 @@ li {
         cursor: pointer;
         padding: 0;
         z-index: 15;
+        animation: burger 6s forwards; 
     }
 
     .burger:focus {
@@ -464,12 +463,38 @@ li {
         text-align: center;
         padding: 1.5rem 0;
         color: var(--primaryColor);
-        transition: color 0.3s linear;      
+        transition: color 0.3s linear;     
   }
 
   a:hover, link:hover {
     font-weight: bold;
   }
+
+  @keyframes burger {
+    0% {
+
+        opacity: 0;
+    }
+
+    50% {
+
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+  }
+
+  .entryAnimation {
+      padding-top: 12rem;
+      padding-bottom: 20rem;
+  }
+
+  .entryLogo {
+    width: 80%;
+    height: 100%;
+}
 
 }
   

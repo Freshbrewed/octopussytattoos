@@ -18,6 +18,7 @@ import './App.css'
 const App = () => {
     const [allMedia, setAllMedia] = useState(null)
     const [loaded, setIsLoaded] = useState(false)
+    const [played, setIsPlayed] = useState(false)
     const [open, setOpen] = useState(false)
     const node = useRef()
     const userID = '17841402105232117'
@@ -32,28 +33,30 @@ const App = () => {
             })
     }, [])
 
+    useEffect(() => {
+        const entry = document.getElementById('entry')
+        if (entry && !played) {
+            try {
+                setTimeout(() => {
+                    if (entry.parentNode) {
+                        entry.parentNode.removeChild(entry)
+                        setIsPlayed(true)
+                    }
+                }, 3650 )
+            }
+            catch (error) {
+                console.log(error)
+            }
+        }
+    }, [])
+
+
     useOnClickOutside(node, () => setOpen(false))
-
-    const entry = document.getElementById('entry')
-
-    if (entry) {
-        try {
-            console.log(entry)
-            setTimeout(() => {
-                if (entry.parentNode) {
-                    entry.parentNode.removeChild(entry)
-                }
-            }, 4000)
-        }
-        catch (error) {
-            console.log(error)
-        }
-    }
 
     return (
         <div className='mainContainer'>
             <Router>
-                <Entry />
+                <Entry played={played}/>
                 <div ref={node}>
                     <BurgerMenu open={open} setOpen={setOpen} />
                     <Burger open={open} setOpen={setOpen} />

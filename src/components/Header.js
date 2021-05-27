@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import banner from '../assets/banner.png'
 
 const Header = () => {
     return (
-        <a href='/#home' className='link'>
+        <Link className='link' to={'/'}>
             <img src={banner} className='header' id='home' />
-        </a>
+        </Link>
     )
 }
 
