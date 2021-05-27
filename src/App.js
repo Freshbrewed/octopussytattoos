@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
+import Entry from './components/Entry'
 import AppBar from './components/AppBar'
 import ImageList from './components/ImageList'
 import Header from './components/Header'
@@ -33,9 +34,26 @@ const App = () => {
 
     useOnClickOutside(node, () => setOpen(false))
 
+    const entry = document.getElementById('entry')
+
+    if (entry) {
+        try {
+            console.log(entry)
+            setTimeout(() => {
+                if (entry.parentNode) {
+                    entry.parentNode.removeChild(entry)
+                }
+            }, 4000)
+        }
+        catch (error) {
+            console.log(error)
+        }
+    }
+
     return (
         <div className='mainContainer'>
             <Router>
+                <Entry />
                 <div ref={node}>
                     <BurgerMenu open={open} setOpen={setOpen} />
                     <Burger open={open} setOpen={setOpen} />

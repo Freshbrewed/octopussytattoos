@@ -42,6 +42,47 @@ li {
     font-size: var(--fontSizeContent);
 }
 
+.entryAnimation {
+    display: flex;
+    animation: pulse 6s forwards;
+    justify-content: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    25% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    35% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        display: none;
+
+    }
+}
+
+.entryLogo {
+    width: 60%;
+    height: 95vh;
+
+}
+
 .burgerMenu {
     display: none;
 }
