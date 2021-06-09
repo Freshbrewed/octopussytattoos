@@ -7,6 +7,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Info from './components/Info'
+import Gallery from './components/Gallery'
 import BurgerMenu from './components/BurgerMenu'
 import Burger from './components/Burger'
 import mediaService from './services/media'
@@ -67,8 +68,14 @@ const App = () => {
                     <Route exact path='/about'>
                         <About />
                     </Route>
+                    <Route exact path='/contact'>
+                        <Contact />
+                    </Route>
                     <Route exact path='/info'>
                         <Info />
+                    </Route>
+                    <Route exact path='/gallery'>
+                        <Gallery media={allMedia}/>
                     </Route>
                     <Route exact path='/'>
                         <ImageList media={allMedia} loaded={loaded} />

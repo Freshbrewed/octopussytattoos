@@ -18,6 +18,7 @@ const Contact = () => {
                     ensure you&apos;ll have a rock smooth and
                     unforgettable experience with us!
                     <br /><br />
+                    <br /><br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
                     <br /><br />
@@ -40,9 +41,10 @@ const Contact = () => {
                     ensure you&apos;ll have a rock smooth and
                     unforgettable experience with us!
                     <br /><br />
+                    <br /><br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
-                    <br/><br />
+                    <br /><br />
                     <div style={{ paddingBottom: '2rem' }} />
                     <SocialMedia width={64} height={64}/>
                 </div>

@@ -3,7 +3,6 @@ import IntersectionObserver from '../hooks/IntersectionObserver'
 import Image from './Image'
 
 const ImageContainer = ({ data }) => {
-
     const ref = useRef()
     const [isVisible, setIsVisible] = useState(false)
 
