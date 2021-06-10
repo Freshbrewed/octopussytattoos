@@ -14,16 +14,13 @@ const Gallery = ({ media }) => {
         changeGalOpen(true)
     }
     return (
-        <div>
-            <div className="gal">
-                {galopen ?
-                    <Lightbox startIndex={currentIndex} images={mapped} onClose={() => changeGalOpen(false)} />
-                    : null}
-                {mapped.map((_im, idx) => <img key={_im.url} className='imgGal' src={_im.url} alt={_im.title} onClick={() => LaunchGallery(idx, changeCurrentIndex, changeGalOpen)} />)}
-            </div>
-            {/*<Lightbox images={mapped} zoomStep={0.45} onClose={() => changeGalOpen(false)} doubleClickZoom='2' showTitle='true' />*/}
+        <div className="image-grid">
+            {galopen ?
+                <Lightbox startIndex={currentIndex} images={mapped} onClose={() => changeGalOpen(false)} />
+                : null}
+            {mapped.map((_im, idx) => <img key={_im.url} className='image' src={_im.url} alt={_im.title} onClick={() => LaunchGallery(idx, changeCurrentIndex, changeGalOpen)} />)}
         </div>
-
+        /*<Lightbox images={mapped} zoomStep={0.45} onClose={() => changeGalOpen(false)} doubleClickZoom='2' showTitle='true' />*/
     )
 }
 
