@@ -16,7 +16,7 @@ const Burger = ({ open, setOpen }) => {
     })
 
     return (
-        <button className='burger' open={open} onClick={() => setOpen(!open)}>
+        <button className='burger' onClick={() => setOpen(!open)}>
             <div style={firstChild(open)}/>
             <div style={secondChild(open)}/>
             <div style={thirdChild(open)}/>

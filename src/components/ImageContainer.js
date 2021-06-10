@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import IntersectionObserver from '../hooks/IntersectionObserver'
 import Image from './Image'
 
-const ImageContainer = ({ data }) => {
+const ImageContainer = ({ image, LaunchGallery, changeCurrentIndex, changeGalOpen, idx }) => {
     const ref = useRef()
     const [isVisible, setIsVisible] = useState(false)
 
@@ -19,7 +19,7 @@ const ImageContainer = ({ data }) => {
     return (
         <div ref={ref} >
             {isVisible && (
-                <Image data={data} />
+                <Image data={image} LaunchGallery={LaunchGallery} changeCurrentIndex={changeCurrentIndex} changeGalOpen={changeGalOpen} idx={idx} />
             )}
         </div>
     )

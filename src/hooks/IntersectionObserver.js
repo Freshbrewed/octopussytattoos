@@ -9,6 +9,7 @@ const useIntersectionObserver = ({ target, onIntersect, threshold = 0.1, rootMar
         const current = target.current
         observer.observe(current)
         return () => {
+            console.log(observer)
             observer.unobserve(current)
         }
     })
