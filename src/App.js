@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Entry from './components/Entry'
 import AppBar from './components/AppBar'
+// eslint-disable-next-line no-unused-vars
 import ImageList from './components/ImageList'
 import Header from './components/Header'
 import About from './components/About'
@@ -18,6 +19,7 @@ import './App.css'
 
 const App = () => {
     const [allMedia, setAllMedia] = useState(null)
+    // eslint-disable-next-line no-unused-vars
     const [loaded, setIsLoaded] = useState(false)
     const [played, setIsPlayed] = useState(false)
     const [open, setOpen] = useState(false)
@@ -43,7 +45,7 @@ const App = () => {
                         entry.parentNode.removeChild(entry)
                         setIsPlayed(true)
                     }
-                }, 3650 )
+                }, 3650)
             }
             catch (error) {
                 console.log(error)
@@ -57,7 +59,7 @@ const App = () => {
     return (
         <div className='mainContainer'>
             <Router>
-                <Entry played={played}/>
+                <Entry played={played} />
                 <div ref={node}>
                     <BurgerMenu open={open} setOpen={setOpen} />
                     <Burger open={open} setOpen={setOpen} />
@@ -65,9 +67,11 @@ const App = () => {
                 <AppBar />
                 <Header />
                 <Switch>
+                    {/*
                     <Route exact path='/about'>
                         <About />
-                    </Route>
+                         </Route>
+                         */}
                     <Route exact path='/contact'>
                         <Contact />
                     </Route>
@@ -75,10 +79,10 @@ const App = () => {
                         <Info />
                     </Route>
                     <Route exact path='/gallery'>
-                        <Gallery media={allMedia}/>
+                        <Gallery media={allMedia} />
                     </Route>
                     <Route exact path='/'>
-                        <ImageList media={allMedia} loaded={loaded} />
+                        <About />
                         <Contact />
                     </Route>
                 </Switch>

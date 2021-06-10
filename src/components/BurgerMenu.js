@@ -11,7 +11,7 @@ const BurgerMenu = ({ open }) => {
     return (
         <nav className='burgerMenu' style={hide(open)} open={open}>
             <a href='/#home' className='link'> Home </a>
-            <Link className='link' to={'/about'}> The Studio </Link>
+            {/*<Link className='link' to={'/about'}> The Studio </Link>*/}
             <Link className='link' to={'/gallery'}>Gallery</Link>
             <a href='/#contact' className='link'> Contact us </a>
             <Link className='link' to={'/info'}> Useful information </Link>

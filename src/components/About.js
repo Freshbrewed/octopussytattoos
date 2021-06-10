@@ -3,16 +3,21 @@ import React from 'react'
 const About = () => {
     return (
         <div className='about' >
-            Octopussy Tattoos is a unique tattoostudio located in the heart of  Helsinki.
-            Octopussy Tattoos was established on 2016 in Lauttasaari
-            and the current shop has been open since September 2020.
-            The current Tattoo Artists are Zsofia Balogh from Transilvania and Sakoro Sakoro from Rio de Janeiro Brazil.
+            Octopussy Tattoos is a unique tattoo studio located in the heart of Helsinki.
+            The Studio was established 2016 in Lauttasaari and the current shop has been open since September 2020.
+            Our Tattoo Artists are Zsofia Balogh from Transylvania and Sakoro Sakoro from Rio de Janeiro, Brazil.
             <br />
             <br />
-            Our Helsinginkatu studio were chosen because of its practical location - the small stoneleg streetshop with cozy
-            decoration creates an intimate atmosphere and allows clients to relax in total privacy.
-            Octopussy Studio is a fully certified sterile and hygienic environment. Our Studio is open by appointments.
-            Agelimit for tattoos are 18 years and up.
+            We&apos;re specialized in custom-made unique tattoo designs, both black and colour.
+            We do tattoo styles like dotwork, geometry, mandala, black & grey, blackwork, fine line, Maori &
+            Polynesian and traditional/old school tattooing as well as Oriental and Lettering.
+            <br />
+            <br />
+            Our Helsinginkatu studio were chosen because of its practical location -
+            the small stone leg street shop with cozy decoration creates an intimate atmosphere and allows
+            clients to relax in a total privacy. Octopussy Tattoos Studio is a fully certified sterile and
+            hygienic environment. Our Studio is open by appointments. Age limit for tattoos are 18 years and up.
+
         </div >
     )
 }
