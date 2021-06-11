@@ -92,8 +92,10 @@ li {
 }
 
 .entryLogo {
-    width: 55%;
-    height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 15rem;
+    width: 45%;
+    height: 75vh;
 }
 
 .burgerMenu {
@@ -603,7 +605,7 @@ li {
 .image-grid4 {
     height: 10rem;
     padding-left: 1.8rem;
-    padding-right: 1.8
+    padding-right: 1.8rem;
 
 }
 
