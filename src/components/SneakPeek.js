@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const SneakPeek = () => {
     const dog = 'https://scontent-hel3-1.cdninstagram.com/v/t51.2885-15/14583423_1138325126258450_6686115966394302464_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=cJ6ZCC3SEicAX8vQwaO&_nc_ht=scontent-hel3-1.cdninstagram.com&oh=957ad3c533f472dbdf13df49484a4fcf&oe=60C8B264'
@@ -15,7 +16,10 @@ const SneakPeek = () => {
     const flower3 = 'https://scontent-hel3-1.cdninstagram.com/v/t51.2885-15/19535372_475249799506263_5685308910487994368_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=8ae9d6&_nc_ohc=_7RF1h1j4PcAX-dEi6K&_nc_ht=scontent-hel3-1.cdninstagram.com&oh=69c9277de076458339b36e1f97dd610a&oe=60C9283E'
     return (
         <div>
-            <div className='contactTitle checkGallery'>Check out our gallery</div>
+            <div className='contactTitle checkGallery'>Check out our</div>
+            <div className='contactTitle'>
+                <Link to={'/gallery'} className='clickGallery'>gallery</Link>
+            </div>
             <div className='image-grid image-grid2'>
                 <img className='image imageSide' src={scorpion} />
                 <img className='image image2' src={flower3} />
