@@ -24,7 +24,7 @@ const App = () => {
     const [isPlayed, setIsPlayed] = useState(false)
     const [loaded, setIsLoaded] = useState(false)
     const [open, setOpen] = useState(false)
-    const [ isClicked, setClicked] = useState(false)
+    const [isClicked, setClicked] = useState(false)
     const node = useRef()
     const userID = '17841402105232117'
     const accessToken = 'IGQVJWWTBtdGVrQ2VsMm5lQnlmRkttX3c2YnhNTXQxQVp0YWdWaEhRYjRkbGpLQkYxYkVCTFZAwdlRaczVXcmI2eHZAaZAUQ3V1MxaWstUlZA3b1dFX1laUE4yaHdCTUZAKMnFsbWFyM2gxWlVUbkJFanNmZAgZDZD'
@@ -58,12 +58,12 @@ const App = () => {
     return (
         <div className='mainContainer'>
             <Router>
-                <Entry isPlayed={isPlayed} setIsPlayed={setIsPlayed}/>
+                <Entry isPlayed={isPlayed} setIsPlayed={setIsPlayed} />
                 <div ref={node}>
                     <BurgerMenu open={open} setOpen={setOpen} isClicked={isClicked} setClicked={setClicked} />
                     <Burger open={open} setOpen={setOpen} />
                 </div>
-                <AppBar isClicked={isClicked} setClicked={setClicked}/>
+                <AppBar isClicked={isClicked} setClicked={setClicked} />
                 <Header />
                 <Switch>
                     <Route exact path='/info'>
@@ -77,11 +77,17 @@ const App = () => {
                         </Scroll>
                     </Route>
                     <Route exact path='/'>
-                        <Scroll id='home'>
-                            <About />
-                            <SneakPeek media={allMedia} />
-                            <Contact />
-                        </Scroll>
+                        {isPlayed ?
+                            <Scroll id='home'>
+                                <About />
+                                <SneakPeek media={allMedia} />
+                                <Contact />
+                            </Scroll>
+                            : <div>
+                                <About />
+                                <SneakPeek media={allMedia} />
+                                <Contact />
+                            </div>}
                     </Route>
                 </Switch>
             </Router>
