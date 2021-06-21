@@ -5,6 +5,10 @@ const getUserNode = async (userID, accessToken) => {
     return response.data
 }
 
+const refreshLongToken = async (accessToken) => {
+    const response = await axios.get(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${accessToken}`)
+    return response.data
+}
 /* TODO Proper backend if needed
 const  shortToken = null
 const code = null
@@ -26,9 +30,7 @@ const getLongToken = async () => {
     return response.data
 }
 
-const refreshLongToken = async () => {
-    const response = await axios.get(`https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${ACCESS_TOKEN}`)
-    return response.data
+
 }*/
 
-export default { getUserNode }
+export default { getUserNode, refreshLongToken }

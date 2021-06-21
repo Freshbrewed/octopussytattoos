@@ -1,4 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react'
+
+//import userService from './services/user'
+import mediaService from './services/media'
+import useOnClickOutside from './hooks/OutsideClick'
+
 import Entry from './components/Entry'
 import AppBar from './components/AppBar'
 import Header from './components/Header'
@@ -9,10 +14,9 @@ import Info from './components/Info'
 import Gallery from './components/Gallery'
 import BurgerMenu from './components/BurgerMenu'
 import Burger from './components/Burger'
-import mediaService from './services/media'
-import useOnClickOutside from './hooks/OutsideClick'
 import SneakPeek from './components/SneakPeek'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+
 import './App.css'
 
 
@@ -32,6 +36,12 @@ const App = () => {
                 setAllMedia(allMedia.data)
                 setIsLoaded(true)
             })
+
+        /*userService
+            .refreshLongToken(accessToken)
+            .then(node => {
+                console.log(node.expires_in)
+            })*/
     }, [])
 
     useEffect(() => {
@@ -75,7 +85,7 @@ const App = () => {
                     </Route>
                     <Route exact path='/'>
                         <About />
-                        <SneakPeek media={allMedia}/>
+                        <SneakPeek media={allMedia} />
                         <Contact />
                     </Route>
                 </Switch>

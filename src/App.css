@@ -202,7 +202,7 @@ li {
     display: grid;
     padding-left: 10rem;
     padding-right: 10rem;
-    gap: 10px;
+    gap: 14px;
     grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     grid-auto-rows: minmax(500px, auto);
   }
@@ -240,19 +240,21 @@ li {
   }
 
 .image:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .image2 {
     height: 80%;
+    cursor: default;
 }
 
 .imageSide {
     box-shadow: none;
     width: 90%;
     height: 65%;
-    padding-left: 2rem;
+    padding-left: 2.2rem;
     padding-top: 4.8rem;
+    cursor: default;
 }
 
 .imageSide1 {
@@ -260,20 +262,23 @@ li {
     width: 90%;
     height: 65%;
     padding-top: 4.8rem;
-
+    cursor: default;
 }
 
 .imageSide2 {
     box-shadow: none;
     width: 90%;
     height: 65%;
-    padding-left: 2rem;
+    padding-left: 2.2rem;
+    cursor: default;
 }
 
 .imageSide3 {
     box-shadow: none;
     width: 90%;
     height: 65%;
+    cursor: default;
+    
 }
 
 .success {
@@ -492,7 +497,7 @@ li {
     }
 
     #languageButton {
-        width: 21%;
+        width: 25%;
     }
 
     .about {
@@ -637,6 +642,10 @@ li {
 .imageSide3 {
     width: 100%;
     height: 75%;
+}
+
+.image:hover {
+    transform: scale(1.5);
 }
 
 .checkGallery {
