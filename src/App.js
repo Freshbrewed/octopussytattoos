@@ -75,7 +75,7 @@ const App = () => {
                     </Route>
                     <Route exact path='/'>
                         <About />
-                        <SneakPeek />
+                        <SneakPeek media={allMedia}/>
                         <Contact />
                     </Route>
                 </Switch>
