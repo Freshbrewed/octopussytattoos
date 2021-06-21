@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo_transparent.png'
 
 const Entry = () => {
-    const [played, setIsPlayed] = useState(false)
+    const [isPlayed, setIsPlayed] = useState(false)
 
     useEffect(() => {
         const entry = document.getElementById('entry')
-        if (entry && !played) {
+        if (entry) {
             try {
                 setTimeout(() => {
                     if (entry.parentNode) {
@@ -21,7 +21,7 @@ const Entry = () => {
         }
     }, [])
 
-    if (played === true) return <div />
+    if (isPlayed === true) return <div />
     return (
         <div className='entryAnimation' id='entry'>
             <img src={logo} className='entryLogo' />
