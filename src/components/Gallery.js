@@ -17,16 +17,19 @@ const Gallery = ({ media, loaded }) => {
     }
 
     return (
-        <div className="image-grid">
-            {galOpen ?
-                <Lightbox startIndex={currentIndex} images={mapped} doubleClickZoom='0' onClose={() => changeGalOpen(false)} />
-                : null}
-            {loaded ?
-                mapped.map((image, idx) => {
-                    return (
-                        <Image key={image.url} image={image} LaunchGallery={LaunchGallery} changeCurrentIndex={changeCurrentIndex} changeGalOpen={changeGalOpen} idx={idx} />
-                    )
-                }) : <div>Loading . . .</div>}
+        <div >
+            <div id='grid-scroll'></div>
+            <div className="image-grid">
+                {galOpen ?
+                    <Lightbox startIndex={currentIndex} images={mapped} doubleClickZoom='0' onClose={() => changeGalOpen(false)} />
+                    : null}
+                {loaded ?
+                    mapped.map((image, idx) => {
+                        return (
+                            <Image key={image.url} image={image} LaunchGallery={LaunchGallery} changeCurrentIndex={changeCurrentIndex} changeGalOpen={changeGalOpen} idx={idx} />
+                        )
+                    }) : <div>Loading . . .</div>}
+            </div>
         </div>
     )
 }

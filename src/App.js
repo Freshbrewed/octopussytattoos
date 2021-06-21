@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 
-//import userService from './services/user'
+import userService from './services/user'
 import mediaService from './services/media'
 import useOnClickOutside from './hooks/OutsideClick'
 
@@ -15,16 +15,15 @@ import Gallery from './components/Gallery'
 import BurgerMenu from './components/BurgerMenu'
 import Burger from './components/Burger'
 import SneakPeek from './components/SneakPeek'
+import Scroll from './components/Scroll'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-
 import './App.css'
-
 
 const App = () => {
     const [allMedia, setAllMedia] = useState(null)
     const [loaded, setIsLoaded] = useState(false)
-    const [played, setIsPlayed] = useState(false)
     const [open, setOpen] = useState(false)
+    const [ isClicked, setClicked] = useState(false)
     const node = useRef()
     const userID = '17841402105232117'
     const accessToken = 'IGQVJWWTBtdGVrQ2VsMm5lQnlmRkttX3c2YnhNTXQxQVp0YWdWaEhRYjRkbGpLQkYxYkVCTFZAwdlRaczVXcmI2eHZAaZAUQ3V1MxaWstUlZA3b1dFX1laUE4yaHdCTUZAKMnFsbWFyM2gxWlVUbkJFanNmZAgZDZD'
@@ -37,56 +36,51 @@ const App = () => {
                 setIsLoaded(true)
             })
 
-        /*userService
+        userService
             .refreshLongToken(accessToken)
             .then(node => {
                 console.log(node.expires_in)
-            })*/
+            })
     }, [])
 
     useEffect(() => {
-        const entry = document.getElementById('entry')
-        if (entry && !played) {
-            try {
-                setTimeout(() => {
-                    if (entry.parentNode) {
-                        entry.parentNode.removeChild(entry)
-                        setIsPlayed(true)
-                    }
-                }, 3650)
-            }
-            catch (error) {
-                console.log(error)
-            }
+        const body = document.getElementById('contact')
+        if (body) {
+            body.scrollIntoView({
+                behavior: 'smooth'
+            }, 500)
         }
-    }, [])
+    }, [isClicked])
 
     useOnClickOutside(node, () => setOpen(false))
 
     return (
         <div className='mainContainer'>
             <Router>
-                <Entry played={played} />
+                <Entry />
                 <div ref={node}>
-                    <BurgerMenu open={open} setOpen={setOpen} />
+                    <BurgerMenu open={open} setOpen={setOpen} isClicked={isClicked} setClicked={setClicked} />
                     <Burger open={open} setOpen={setOpen} />
                 </div>
-                <AppBar />
+                <AppBar isClicked={isClicked} setClicked={setClicked}/>
                 <Header />
                 <Switch>
-                    <Route exact path='/contact'>
-                        <Contact />
-                    </Route>
                     <Route exact path='/info'>
-                        <Info />
+                        <Scroll id='languageButton'>
+                            <Info />
+                        </Scroll>
                     </Route>
                     <Route exact path='/gallery'>
-                        <Gallery media={allMedia} loaded={loaded} />
+                        <Scroll id='grid-scroll'>
+                            <Gallery media={allMedia} loaded={loaded} />
+                        </Scroll>
                     </Route>
                     <Route exact path='/'>
-                        <About />
-                        <SneakPeek media={allMedia} />
-                        <Contact />
+                        <Scroll id='home'>
+                            <About />
+                            <SneakPeek media={allMedia} />
+                            <Contact />
+                        </Scroll>
                     </Route>
                 </Switch>
             </Router>
