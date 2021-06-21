@@ -21,6 +21,7 @@ import './App.css'
 
 const App = () => {
     const [allMedia, setAllMedia] = useState(null)
+    const [isPlayed, setIsPlayed] = useState(false)
     const [loaded, setIsLoaded] = useState(false)
     const [open, setOpen] = useState(false)
     const [ isClicked, setClicked] = useState(false)
@@ -45,7 +46,7 @@ const App = () => {
 
     useEffect(() => {
         const body = document.getElementById('contact')
-        if (body) {
+        if (body && isPlayed) {
             body.scrollIntoView({
                 behavior: 'smooth'
             }, 500)
@@ -57,7 +58,7 @@ const App = () => {
     return (
         <div className='mainContainer'>
             <Router>
-                <Entry />
+                <Entry isPlayed={isPlayed} setIsPlayed={setIsPlayed}/>
                 <div ref={node}>
                     <BurgerMenu open={open} setOpen={setOpen} isClicked={isClicked} setClicked={setClicked} />
                     <Burger open={open} setOpen={setOpen} />

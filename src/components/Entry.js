@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import logo from '../assets/logo_transparent.png'
 
-const Entry = () => {
-    const [isPlayed, setIsPlayed] = useState(false)
+const Entry = ({ isPlayed, setIsPlayed }) => {
 
     useEffect(() => {
         const entry = document.getElementById('entry')
-        if (entry) {
+        if (entry && !isPlayed) {
             try {
                 setTimeout(() => {
                     if (entry.parentNode) {
