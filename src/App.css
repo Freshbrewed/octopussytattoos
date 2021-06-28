@@ -42,21 +42,6 @@ li {
     font-size: var(--fontSizeContent);
 }
 
-.gal {
-    display: flex;
-    justify-content: center;
-  }
-
-.imgGal {
-    height: 100px;
-    margin: 4px;
-    cursor: pointer;
-}
-.imgGal:hover {
-    transform: scale(1.01);
-    box-shadow: 1px 1px 5px 0px #999;
-}
-
 .entryAnimation {
     display: flex;
     animation: pulse 6s forwards;
@@ -196,6 +181,10 @@ li {
     display: flex;
     width: 25%;
     border: 0;
+}
+
+.grid-scroll {
+    display: flex;
 }
   
 .image-grid {
@@ -446,8 +435,18 @@ li {
 	color:black;
 }
 
+/* Ipad */
+@media only screen and (max-width: 1366px) {
+    body {
+        height: 150px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     /* For mobile phones */
+    body {
+        height: 150px;
+    }
 
     .appBarContainer {
         display: none;
@@ -644,6 +643,10 @@ li {
 
 .image:hover {
     transform: scale(1.5);
+}
+
+.img-nohover:hover {
+    transform: none;
 }
 
 .checkGallery {

@@ -39,9 +39,9 @@ const App = () => {
 
         userService
             .refreshLongToken(accessToken)
-            .then(node => {
+            /*.then(node => {
                 console.log(node.expires_in)
-            })
+            })*/
     }, [])
 
     useEffect(() => {
@@ -58,7 +58,9 @@ const App = () => {
     return (
         <div className='mainContainer'>
             <Router>
-                <Entry isPlayed={isPlayed} setIsPlayed={setIsPlayed} />
+                <Scroll id='entry' >
+                    <Entry isPlayed={isPlayed} setIsPlayed={setIsPlayed} />
+                </Scroll>
                 <div ref={node}>
                     <BurgerMenu open={open} setOpen={setOpen} isClicked={isClicked} setClicked={setClicked} />
                     <Burger open={open} setOpen={setOpen} />

@@ -3,15 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 const Scroll = (props) => {
     const { children } = props
-
     const location = useLocation()
-
-    /* useEffect(() => {
-         window.scrollTo({
-             top: props.top,
-             behavior: 'smooth'
-         })
-     }, [location]) */
 
     useEffect(() => {
         const body = document.getElementById(props.id)
