@@ -192,26 +192,26 @@ li {
     padding-left: 10rem;
     padding-right: 10rem;
     gap: 14px;
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-    grid-auto-rows: minmax(500px, auto);
+    grid-template-columns: repeat(auto-fill, minmax(20% , 1fr));
+    grid-auto-rows: minmax(250px, auto);
   }
 
 .image-grid2 {
-      height: 25.8rem;
       padding-top: 1rem;
       padding-left: 16rem;
       padding-right: 16rem;
   }
 
 .image-grid3 {
-      height: 25.8rem;
       padding-left: 12rem;
       padding-right: 12rem;
+      padding-top: 0.8rem;
   }
 
 .image-grid4 {
       padding-left: 16rem;
       padding-right: 16rem;
+      padding-top: 0.8rem;
   }
 
 .image {
@@ -227,47 +227,46 @@ li {
 .image:nth-child(5n){
     grid-column-end: span 2;
   }
+  
+.imgContainer:nth-child(5n){
+    grid-column-end: span 2;
+  }
+
 
 .image:hover {
     transform: scale(1.02);
 }
 
-.image2 {
-    height: 80%;
-    cursor: default;
-}
-
 .imageSide {
     box-shadow: none;
-    width: 90%;
-    height: 65%;
-    padding-left: 2.2rem;
-    padding-top: 4.8rem;
+    width: 95%;
+    height: 95%;
+    padding-top: 1rem;
+    padding-left: 1rem;
     cursor: default;
 }
 
 .imageSide1 {
     box-shadow: none;
-    width: 90%;
-    height: 65%;
-    padding-top: 4.8rem;
+    width: 95%;
+    height: 95%;
+    padding-top: 0.8rem;
     cursor: default;
 }
 
 .imageSide2 {
     box-shadow: none;
-    width: 90%;
-    height: 65%;
-    padding-left: 2.2rem;
+    width: 95%;
+    height: 95%;
+    padding-left: 0.8rem;
     cursor: default;
 }
 
 .imageSide3 {
     box-shadow: none;
-    width: 90%;
-    height: 65%;
+    width: 95%;
+    height: 95%;
     cursor: default;
-    
 }
 
 .success {
@@ -318,8 +317,6 @@ li {
     font-size: var(--fontSizeTitle);
     cursor: pointer;
 }
-
-
 
 .contactContent {
     display: flex;
@@ -437,21 +434,71 @@ li {
 
 /* Ipad */
 @media only screen and (max-width: 1366px) {
-    body {
-        height: 150px;
+
+    .image-grid {
+        display: grid;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        gap: 14px;
+        grid-template-columns: repeat(auto-fill, minmax(200px , 1fr));
+        grid-auto-rows: minmax(250px, auto);
+      }
+
+      .image {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.2s transform;
+        box-shadow: 1px 1px 5px 0px rgba(215,123,90,255);
+        cursor: pointer;
     }
+
+    .image-grid2 {
+        padding-top: 1rem;
+        padding-left: 16rem;
+        padding-right: 16rem;
+    }
+  
+  .image-grid3 {
+        padding-left: 12rem;
+        padding-right: 12rem;
+        padding-top: 0.2rem;
+    }
+  
+  .image-grid4 {
+        padding-left: 16rem;
+        padding-right: 16rem;
+        padding-top: 0.2rem;
+    }
+
+    .imageSide {
+        box-shadow: none;
+    }
+
+    .imageSide1 {
+        box-shadow: none;
+    }
+
+    .imageSide2 {
+        box-shadow: none;
+    }
+
+    .imageSide3 {
+        box-shadow: none;
+    }
+
+
+
 }
 
 @media only screen and (max-width: 768px) {
     /* For mobile phones */
-    body {
-        height: 150px;
-    }
 
     .appBarContainer {
         display: none;
     }
-
+    ￼
     .link {
         font-size: var(--fontSizeMobile);
     }

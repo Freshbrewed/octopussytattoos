@@ -56,7 +56,7 @@ const App = () => {
     useOnClickOutside(node, () => setOpen(false))
 
     return (
-        <div className='mainContainer'>
+        <>
             <Router>
                 <Scroll id='entry' >
                     <Entry isPlayed={isPlayed} setIsPlayed={setIsPlayed} />
@@ -94,7 +94,7 @@ const App = () => {
                 </Switch>
             </Router>
             <Footer />
-        </div>
+        </>
     )
 }
 

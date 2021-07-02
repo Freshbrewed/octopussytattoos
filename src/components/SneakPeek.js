@@ -22,23 +22,25 @@ const SneakPeek = ({ media }) => {
             <div className='contactTitle'>
                 <Link to={'/gallery'} className='clickGallery'>Gallery</Link>
             </div>
-            <div className='image-grid image-grid2'>
-                <img className='image imageSide' src={scorpion} />
-                <img className='image image2' src={flower3} />
-                <img className='image image2' src={skull2} />
-                <img className='image imageSide1' src={lotus} />
-            </div>
-            <div className='image-grid image-grid3'>
-                <img className='image image2' src={dog} />
-                <img className='image image2' src={woman} />
-                <img className='image image2' src={cactus} />
-                <img className='image image2' src={dragon} />
-            </div>
-            <div className='image-grid image-grid4'>
-                <img className='image imageSide2' src={abstract} />
-                <img className='image image2' src={skull} />
-                <img className='image image2' src={flower} />
-                <img className='image imageSide3' src={fly} />
+            <div className='frontPictures'>
+                <div className='image-grid image-grid2'>
+                    <img className='image imageSide' src={scorpion} />
+                    <img className='image image2' src={flower3} />
+                    <img className='image image2' src={skull2} />
+                    <img className='image imageSide1' src={lotus} />
+                </div>
+                <div className='image-grid image-grid3'>
+                    <img className='image image2' src={dog} />
+                    <img className='image image2' src={woman} />
+                    <img className='image image2' src={cactus} />
+                    <img className='image image2' src={dragon} />
+                </div>
+                <div className='image-grid image-grid4'>
+                    <img className='image imageSide2' src={abstract} />
+                    <img className='image image2' src={skull} />
+                    <img className='image image2' src={flower} />
+                    <img className='image imageSide3' src={fly} />
+                </div>
             </div>
         </div>
 
