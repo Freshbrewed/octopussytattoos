@@ -16,6 +16,7 @@ const SneakPeek = ({ media }) => {
     const lotus = media.filter(picture => picture.id.includes('17970896263210577'))[0].media_url
     const skull = media.filter(picture => picture.id.includes('17930028691066409'))[0].media_url
     const flower3 = media.filter(picture => picture.id.includes('17877207322082243'))[0].media_url
+
     return (
         <div>
             <div className='contactTitle checkGallery'>Check out our</div>

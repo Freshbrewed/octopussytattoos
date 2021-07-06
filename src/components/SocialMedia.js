@@ -3,6 +3,7 @@ import fb from '../assets/fb.png'
 import insta from '../assets/instagram.png'
 
 const SocialMedia = ({ width, height }) => {
+
     return (
         <div>
             <a style={{ display: 'table-cell' }} href='https://www.facebook.com/octopusytattoos' target="_blank"
