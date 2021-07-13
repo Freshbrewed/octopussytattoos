@@ -17,10 +17,10 @@ const Contact = () => {
                     We&apos;ll be happy answering your questions to
                     ensure you&apos;ll have a rock smooth and
                     unforgettable experience with us!
-                    <br /><br />
+                    <p></p>
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
-                    <br /><br />
+                    <p></p>
                     <SocialMedia width={64} height={64}/>
                 </div>
                 <Notification notification={notification} />
