@@ -14,7 +14,7 @@ and may be harmful to your health.`,
     `The healing process starts as soon as the tattoo is finished. It takes around 2 to 3 weeks & in this stage
 the responsibility passes from the tattoo artist to the tattooed. Treatment of the tattoo during
 the first days of healing will define how it will look for the rest of your life, so you must take great care during
-healing process!`,
+the healing process!`,
     `When the tattoo is finished, a protective film is placed on top of it. This film must be removed between 2 to
 12 hours. The purpose of the film is to protect the area and make the skin less irritated. After removing
 the film, the tattoo should be washed gently with cool water and pH-neutral soap. Always wash your hands
