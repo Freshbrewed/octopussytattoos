@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const SneakPeek = ({ media }) => {
     if (media === null) return <div>Loading . . .</div>
     //Hard coded URLs are going to get signature expired. Must be filtered from the fresh list of queried media.
-    const dog = media.filter(picture => picture.id.includes('17853723223110052'))[0].media_url
+    //const dog = media.filter(picture => picture.id.includes('17853723223110052'))[0].media_url
     const cactus = media.filter(picture => picture.id.includes('17915617936366292'))[0].media_url
     const woman = media.filter(picture => picture.id.includes('17863820668195919'))[0].media_url
     const dragon = media.filter(picture => picture.id.includes('17960715370018923'))[0].media_url
@@ -16,6 +16,7 @@ const SneakPeek = ({ media }) => {
     const lotus = media.filter(picture => picture.id.includes('17970896263210577'))[0].media_url
     const skull = media.filter(picture => picture.id.includes('17930028691066409'))[0].media_url
     const flower3 = media.filter(picture => picture.id.includes('17877207322082243'))[0].media_url
+    const wolf = media.filter(picture => picture.id.includes('18013906081321353'))[0].media_url
 
     return (
         <div>
@@ -31,7 +32,7 @@ const SneakPeek = ({ media }) => {
                     <img className='image imageSide1' src={lotus} />
                 </div>
                 <div className='image-grid image-grid3'>
-                    <img className='image image2' src={dog} />
+                    <img className='image image2' src={wolf} />
                     <img className='image image2' src={woman} />
                     <img className='image image2' src={cactus} />
                     <img className='image image2' src={dragon} />

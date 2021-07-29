@@ -15,12 +15,15 @@ const Contact = () => {
                     Should you have any questions regarding
                     the tattoo, our studio or anything else, just shoot away.
                     We&apos;ll be happy answering your questions to
-                    ensure you&apos;ll have a rock smooth and
+                    ensure you&apos;ll have a smooth and
                     unforgettable experience with us!
-                    <p></p>
+                    <br />
+                    <br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
-                    <p></p>
+                    We will provide help sketching your tattoo if needed.
+                    <br />
+                    <br />
                     <SocialMedia width={64} height={64}/>
                 </div>
                 <Notification notification={notification} />
@@ -37,12 +40,15 @@ const Contact = () => {
                     Should you have any questions regarding
                     the tattoo, our studio or anything else, just shoot away.
                     We&apos;ll be happy answering your questions to
-                    ensure you&apos;ll have a rock smooth and
+                    ensure you&apos;ll have a smooth and
                     unforgettable experience with us!
-                    <br /><br />
+                    <br />
+                    <br />
                     Use the contact form to
                     either book yourself a time or ask away whatever you have in your mind.
-                    <br /><br />
+                    We will provide help sketching your tattoo if needed.
+                    <br />
+                    <br />
                     <div style={{ paddingBottom: '2rem' }} />
                     <SocialMedia width={64} height={64}/>
                 </div>

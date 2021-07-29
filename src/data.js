@@ -9,21 +9,35 @@ const infoFin = [
 ]
 
 const infoEng = [
-    `For a perfect healing it is very important to respect the indicated process, not following the procedure will affect the final result of the tattoo and can be harmful to your health.
-When we finish getting a tattoo the healing process starts, this usually takes 2 to 3 weeks and IN THIS PART THE RESPONSIBILITY PASSES FROM THE TATOO ARTIST TO THE TATTOED.
- The care of the first days after getting a tattoo will define how your tattoo will look for the rest of your life, so you must FOLLOW THE GUIDELINES OF YOUR TATTOO ARTIST AND RESPECT THE HEALING PROCESS!`,
-    ` When the tattoo is finished, a film is placed to protect the tattoo, this film must be removed between 2 to 12 hours. 
-    In the first few hours the film is useful to retain fluids and you feel more comfortable after the first few hours. 
-    After removing the film, you should wash the tattoo with cold or warm water and neutral pH soap. It probably hurts a little, 
-    so you should rub it slowly and without using your nails, wash your hands with water and soap before touching the tattoo. 
-    Wash the tattoo twice a day for the first 15 days.`,
-    `Dry the tattoo with paper towels and apply a FINE LAYER of cream 2 to 3 times a day. 
-    The cream should be applied with clean hands and dry skin. Use only the cream that your tattoo artist advised. 
-    Exaggerating the amount of cream will not heal the tattoo better or faster, so it may ruin your tattoo. `,
-    ' Let the skins come out naturally without scratching or plucking. It is normal during the healing process for the tattoo to look dry and loosen skin, you may also feel an itchy but not itchy, to relieve moisturize the skin with cream.',
-    ' Do not do physical exercise in the first 15 days, wear loose, comfortable clothing that does not aggressively rub the tattoo and does not make you sweat. DURING THE FIRST 15 DAYS, BEACH BATHS, SWIMMING POOLS, RIVERS, LAKES, JACUZZIS AND SAUNAS ARE PROHIBITED. A tattoo is an open wound, that is, possible entry of bacteria into your body. freshly finished tattoos in any of the environments described above will compromise the final result of the tattoo and put your health at risk.',
-    ' DO NOT EXPOSE YOUR TATTOO TO THE SUN. The tattooed skin is very sensitive to the sun, both in the healing process as well as for the rest of life. After the skin is healed, to maintain the quality of the work and protect your skin, you should use sunblock (FP50) whenever exposing your tattoo to the sun.',
-    'IMPORTANT: It is important not to follow the opinions of third parties. Follow your tattoo artist\'s guidelines. If you have any problems, contact your tattoo artist. WE WILL NOT BE LIABLE FOR TREATMENT DIFFERENT FROM THE RECOMMENDED! Complying with all the rules is a guarantee of a perfect healing result for your tattoo.'
+    `In order to let your tattoo heal properly, it's crucial to follow this guide, as ignoring it will affect the final result
+and may be harmful to your health.`,
+    `The healing process starts as soon as the tattoo is finished. It takes around 2 to 3 weeks & in this stage
+the responsibility passes from the tattoo artist to the tattooed. Treatment of the tattoo during
+the first days of healing will define how it will look for the rest of your life, so you must take great care during
+healing process!`,
+    `When the tattoo is finished, a protective film is placed on top of it. This film must be removed between 2 to
+12 hours. The purpose of the film is to protect the area and make the skin less irritated. After removing
+the film, the tattoo should be washed gently with cool water and pH-neutral soap. Always wash your hands
+with soap before touching the tattoo! The tattoo must be washed twice a day for the first 15 days.`,
+    `Apply a thin layer of moisturizing cream 2 to 3 times a day. Wash the area beforehand and dry it with a paper towel.
+Always maintain a good hand hygiene! Use only cream advised by your tattoo artist. Exaggerating the
+amount of cream will not accelerate the healing process & it may in turn ruin your tattoo.`,
+    `During the healing process it's normal for the tattoo to look dry and the skin to peel. Let it peel off
+naturally without scratching or plucking your skin. The skin might feel extremely itchy, however do not
+scratch it in any way. Using moisturizing cream will greatly reduce itchiness of the skin.`,
+    `Avoid doing any physical exercises in the first 14 days after taking the tattoo. Wear loose and comfortable clothing that don't
+ rub the tattoo aggressively or make you sweat. During the first 14 days going to the beach, swimming in
+lakes or pools, Jacuzzis, sauna and solarium is strictly prohibited! A tattoo is an open wound, so it's
+ vulnerable to bacterial infection. Ignoring these restrictions will compromise your tattoo and put
+your health at risk.`,
+    `Do not expose your tattoo to the sun. The tattooed skin is very sensitive to the sun and its UV rays
+during the healing process as well as for the rest of its life. After the skin is healed, you should use
+sunblock (FP50) whenever exposing your tattoo to the sun. This will ensure that the quality of the tattoo
+is preserved and your skin is protected.`,
+    `IMPORTANT: It is vital not to follow the opinions of third parties. Follow your tattoo artist's
+guidelines. If you have any problems, always contact your tattoo artist. Your tattoo artist is not liable for
+differentiated treatment taken without following our recommended guidelines! Complying with all the rules guarantees the
+perfect healing & quality of your tattoo.`
 ]
 
 export default { infoFin, infoEng }
