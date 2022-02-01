@@ -27,7 +27,7 @@ const App = () => {
     const [isClicked, setClicked] = useState(false)
     const node = useRef()
     const userID = '17841402105232117'
-    const accessToken = 'IGQVJWWTBtdGVrQ2VsMm5lQnlmRkttX3c2YnhNTXQxQVp0YWdWaEhRYjRkbGpLQkYxYkVCTFZAwdlRaczVXcmI2eHZAaZAUQ3V1MxaWstUlZA3b1dFX1laUE4yaHdCTUZAKMnFsbWFyM2gxWlVUbkJFanNmZAgZDZD'
+    const accessToken = 'IGQVJYTmVrcmxlR1QzcWZANUGNNNWhTX3l2Y1NRZAzJvWEhtODdhSlN2blNheWVXTHVUVUptaUFiRnAybEI5cHJJbzNTMzVsYmxlVlprOEIwT3ItYTRsRy00TzVmd3ppTUVPV1UzMzFkNm02bGNNUzdfRwZDZD'
 
     useEffect(() => {
         mediaService
@@ -36,12 +36,11 @@ const App = () => {
                 setAllMedia(allMedia.data)
                 setIsLoaded(true)
             })
-
         userService
             .refreshLongToken(accessToken)
-            /*.then(node => {
-                console.log(node.expires_in)
-            })*/
+        /*.then(node => {
+            console.log(node.expires_in)
+        })*/
     }, [])
 
     useEffect(() => {
