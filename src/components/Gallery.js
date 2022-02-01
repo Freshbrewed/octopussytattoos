@@ -17,7 +17,8 @@ const Gallery = ({ media, loaded }) => {
     }
 
     return (
-        <div id='grid-scroll'>
+        <div >
+            <div id='grid-scroll' />
             <div className="image-grid image-grid-gallery">
                 {galOpen ?
                     <Lightbox startIndex={currentIndex} images={mapped} doubleClickZoom='0' onClose={() => changeGalOpen(false)} />

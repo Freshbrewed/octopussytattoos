@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
     return (
-        <div className='about' >
+        <div className='about' id='home' >
             <div>
                 Octopussy Tattoos is a unique tattoo studio located in the heart of Helsinki.
                 The Studio was established 2016 in Lauttasaari and the current shop has been open since September 2020.

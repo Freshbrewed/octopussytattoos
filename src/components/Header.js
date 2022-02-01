@@ -5,7 +5,7 @@ import banner from '../assets/banner.png'
 const Header = () => {
     return (
         <Link className='link' to={'/'}>
-            <img src={banner} className='header' id='home' />
+            <img src={banner} className='header'/>
         </Link>
     )
 }
