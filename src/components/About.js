@@ -6,7 +6,7 @@ const About = () => {
             <div>
                 Octopussy Tattoos is a unique tattoo studio located in the heart of Helsinki.
                 The Studio was established 2016 in Lauttasaari and the current shop has been open since September 2020.
-                Our Tattoo Artists are Zsofia Balogh from Transylvania and Sakoro Sakonp from Rio de Janeiro.
+                Our Tattoo Artists are Zsofia Balogh from Transylvania and Sakoro Sako from Rio de Janeiro.
                 <br />
                 <br />
                 We&apos;re specialized in custom-made unique tattoo designs, both black and colour.

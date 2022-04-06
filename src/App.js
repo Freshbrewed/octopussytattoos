@@ -27,7 +27,7 @@ const App = () => {
     const [isClicked, setClicked] = useState(false)
     const node = useRef()
     const userID = '17841402105232117'
-    const accessToken = 'IGQVJYTmVrcmxlR1QzcWZANUGNNNWhTX3l2Y1NRZAzJvWEhtODdhSlN2blNheWVXTHVUVUptaUFiRnAybEI5cHJJbzNTMzVsYmxlVlprOEIwT3ItYTRsRy00TzVmd3ppTUVPV1UzMzFkNm02bGNNUzdfRwZDZD'
+    const accessToken = 'IGQVJVRVBFemlMclJhWi1nSHhQeE1KdmtJVGkzamI0OHA4UURsZA1hyZAkdfXzBIXzF5Sm5lOGNocXVfQWgxTnY4QjRHY0h2UVdKaHlqUE02ZAXhXNHIwcFdiTXg1WEMxaDhOS1kyVnVOb0JfSmcyTVVHNgZDZD'
 
     useEffect(() => {
         mediaService
