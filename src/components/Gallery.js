@@ -8,25 +8,26 @@ const Gallery = ({ media, loaded }) => {
 
     const [galOpen, changeGalOpen] = useState(false)
     const [currentIndex, changeCurrentIndex] = useState(0)
-    const mapped = media.map(({ media_url, caption, media_type, thumbnail_url }) =>
-        ({ url: media_url, title: caption, type: media_type, thumb: thumbnail_url }))
+
+    const images = media.filter(element => element.media_type !== 'VIDEO')
+        .map((image) =>
+            ({ id: image.id, url:image.media_url, title: image.caption, type: image.media_type }))
 
     const LaunchGallery = (_i, changeCurrentIndex, changeGalOpen) => {
         changeCurrentIndex(_i)
         changeGalOpen(true)
     }
-
     return (
         <div >
             <div id='grid-scroll' />
             <div className="image-grid image-grid-gallery">
                 {galOpen ?
-                    <Lightbox startIndex={currentIndex} images={mapped} doubleClickZoom='0' onClose={() => changeGalOpen(false)} />
+                    <Lightbox startIndex={currentIndex} images={images} doubleClickZoom='0' onClose={() => changeGalOpen(false)} />
                     : null}
                 {loaded ?
-                    mapped.map((image, idx) => {
+                    images.map((image, idx) => {
                         return (
-                            <Image key={image.url} image={image} LaunchGallery={LaunchGallery} changeCurrentIndex={changeCurrentIndex} changeGalOpen={changeGalOpen} idx={idx} />
+                            <Image key={image.id} image={image} LaunchGallery={LaunchGallery} changeCurrentIndex={changeCurrentIndex} changeGalOpen={changeGalOpen} idx={idx} />
                         )
                     }) : <div>Loading . . .</div>}
             </div>

@@ -20,7 +20,7 @@ const Contact = () => {
                     <br />
                     <br />
                     Use the contact form to
-                    either book yourself a time or ask away whatever you have in your mind.
+                    either book yourself an appointment or ask away any question you have in your mind.
                     We will provide help sketching your tattoo if needed.
                     <br />
                     <br />
@@ -44,8 +44,7 @@ const Contact = () => {
                     unforgettable experience with us!
                     <br />
                     <br />
-                    Use the contact form to
-                    either book yourself a time or ask away whatever you have in your mind.
+                    Use the contact form to either book yourself a time or ask away whatever you have in your mind.
                     We will provide help sketching your tattoo if needed.
                     <br />
                     <br />
