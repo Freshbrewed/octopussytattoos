@@ -27,7 +27,7 @@ const App = () => {
     const [isClicked, setClicked] = useState(false)
     const node = useRef()
     const userID = '17841402105232117'
-    const accessToken = 'NOT-GONNA-SHOW-IT-TO-YOU'
+    const accessToken = 'IGQWRPWlFSdnZA6SWVLZATFqeU13LTJIR2IxbE9WVzIydlhEMUpNTlVvM1hyd3NOX2xJWEV0OTRRMmR2NWo5WlJNMUJaUThhWU5yQVNxVzJRbkdTMWp2OWFMT0dPdm91VHBFS3JVYjNyV29DQlF2Q21Da0VoMERzNk0ZD'
 
     useEffect(() => {
         mediaService
